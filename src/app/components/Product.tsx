@@ -91,8 +91,10 @@ export default function Product(product: ProductProps) {
         {isEditing && (
           <>
             <input
-              type="text"
               className={styles['edit-name']}
+              id={`name-${id}`}
+              name={`name-${id}`}
+              type="text"
               placeholder="Narcissist Foaming Hand Soap..."
               value={name}
               onChange={handleInputChange}
@@ -102,6 +104,8 @@ export default function Product(product: ProductProps) {
               <input
                 className={styles['slider']}
                 type="range"
+                id={`slider-${id}`}
+                name={`slider-${id}`}
                 min="8"
                 max="40"
                 value={fontSize}
