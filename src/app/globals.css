@@ -1,0 +1,26 @@
+:root {
+  --background-color: white;
+  --primary-color: #ead7e5;
+  --secondary-color: #92828e;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--background-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
